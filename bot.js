@@ -1,8 +1,8 @@
 import { Telegraf } from 'telegraf';
 import Groq from 'groq-sdk';
 
-const bot = new Telegraf('BURAYA_TELEGRAM_TOKEN_GELECEK');
-const groq = new Groq({ apiKey: 'BURAYA_GROQ_KEY_GELECEK' });
+const bot = new Telegraf(process.env.BOT_TOKEN);
+const groq = new Groq({ apiKey: process.env.GROQ_API_KEY });
 
 const sessions = new Map();
 
